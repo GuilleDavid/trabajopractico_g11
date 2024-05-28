@@ -1,0 +1,342 @@
+body {
+    background-color: black;
+    background-size: cover; /* Ajusta la imagen para cubrir la pantalla */
+    background-position: center; /* centra la imagen */
+    background-attachment: fixed;
+    filter: brightness(130%);
+    height: 700px;
+    opacity: 1;
+}
+
+.volver-al-inicio {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background:rgb(27, 65, 130);
+    color: white;
+    width: 8%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 1px rgba (0, 0, 0, .2)
+}
+
+.detalleCursoAnalisisDatos h1{
+    color:darkgrey;
+    font-family:georgia;
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+    font-size: 40px;
+}
+.detalleCursoAnalisisDatos h3 {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.detalleCursoAnalisisDatos p {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.cursosAnalisisDeDatos h2 {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.listado-cursos {
+    display: flex;
+    min-height: 100vh;
+    align-items:center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+.detalle-cursos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.img-curso{
+    background: url(imagenes_cursos/EXCEL_2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso2{
+    background: url(imagenes_cursos/excel-avanzado.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso3{
+    background: url(imagenes_cursos/sql.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso4{
+    background: url(imagenes_cursos/sql2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso5{
+    background: url(imagenes_cursos/power_bi.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.cursos {
+    box-shadow: 0px 1px 6px 1px blue;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.cursos:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 1px 14px 2px white;
+
+}
+.encabezado_curso{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cursos:hover .img-curso,
+.cursos:hover .img-curso2,
+.cursos:hover .img-curso3,
+.cursos:hover .img-curso4,
+.cursos:hover .img-curso5 {
+    transform: scale(1.1);
+}
+.contenido-curso {
+    padding: 15px;
+    text-align: center;
+}
+.contenido-curso span {
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+.contenido-curso h3 {
+    margin-bottom: 15px;
+    color:white;
+}
+.contenido-curso p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color:white;
+}
+.contenido-curso .link-curso {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background:rgb(27, 65, 130);
+    color: white;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 1px rgba (0, 0, 0, .2)
+}
+@media (max-width: 840px) {
+    .detalle-cursos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .detalle-cursos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.img-curso_sg{
+    background: url(imagenes_cursos/imagen_sg_1.png);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso_sg2{
+    background: url(imagenes_cursos/imagen_sg_2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso_sg3{
+    background: url(imagenes_cursos/imagen_sg_3.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso_sg4{
+    background: url(imagenes_cursos/imagen_sg_4.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.detalleCiberseguridad h1{
+    color:darkgrey;
+    font-family:georgia;
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+    font-size: 40px;
+}
+.detalleCiberseguridad h3 {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.detalleCiberseguridad p {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.cursosCiberseguridad h2 {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+
+.img-curso-dw{
+    background: url(imagenes_cursos/imagen_dw_1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso-dw2{
+    background: url(imagenes_cursos/imagen_dw_2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso-dw3{
+    background: url(imagenes_cursos/imagen_dw_3.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso-dw4{
+    background: url(imagenes_cursos/imagen_dw_4.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso-dw5{
+    background: url(imagenes_cursos/imagen_dw_5.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso-dw6{
+    background: url(imagenes_cursos/imagen_dw_6.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.detalleCursoDesarrolloWeb h1{
+    color:darkgrey;
+    font-family:georgia;
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+    font-size: 40px;
+}
+.detalleCursoDesarrolloWeb h3 {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.detalleCursoDesarrolloWeb p {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.detalleCursoDesarrolloWeb h2 {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.img-curso_ia{
+    background: url(imagenes_cursos/imagen_ia_1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso_ia2{
+    background: url(imagenes_cursos/imagen_ia_2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso_ia3{
+    background: url(imagenes_cursos/imagen_ia_3.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.img-curso_ia4{
+    background: url(imagenes_cursos/imagen_ia_4.webp);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.detalleCursoIA h1{
+    color:darkgrey;
+    font-family:georgia;
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+    font-size: 40px;
+}
+.detalleCursoIA h3 {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.detalleCursoIA p {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
+.detalleCursoIA h2 {
+    color:white;
+    font-family:georgia;
+    text-align: center;
+}
